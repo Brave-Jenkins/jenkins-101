@@ -5,7 +5,7 @@ pipeline {
             }
       }
     triggers {
-        pollSCM '* * * * *'
+        pollSCM '* * * * *' /* Checkc ecach 1 minute update in repo code */
     }
     stages {
         stage('Build') {
